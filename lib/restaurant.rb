@@ -15,4 +15,12 @@ class Restaurant
   def add_dish(dish)
     @dishes << dish
   end
+
+  def menu_dish_names
+    menu_dishes = []
+    @dishes.each do |dish|
+      menu_dishes << dish.upcase
+    end
+    menu_dishes
+  end
 end
