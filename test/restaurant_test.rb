@@ -54,6 +54,6 @@ class RestaurantTest < Minitest::Test
     restaurant.add_dish('Pizzetta')
     restaurant.add_dish('Ravioli')
 
-    assert_equal ['BURRATA', 'PIZZETA', 'RAVIOLI'], restaurant.menu_dish_names
+    assert_equal ['BURRATA', 'PIZZETTA', 'RAVIOLI'], restaurant.menu_dish_names
   end
 end
