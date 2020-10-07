@@ -1,3 +1,5 @@
+
+
 class Restaurant
   attr_reader :name, :opening_time, :dishes
   def initialize(opening_time,name)
@@ -23,4 +25,9 @@ class Restaurant
     end
     menu_dishes
   end
+
+  def open_for_lunch?
+    @opening_time.split(":")[0].to_i < 12
+  end
+
 end
